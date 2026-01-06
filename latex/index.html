@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TSC Latex Language Translator</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <span class="title">THUNDER SCIENTIFIC CORPORATION</span>
+  <span class="title">LATEX LANGUAGE TRANSLATOR (C) 2026</span>
+  <span class="separator"></span>
+  <span class="text">TRANSLATOR VERSION</span>
+  <a class="text" href="https://slashtemporary.github.io/latex/version">[ 1.2.0 ]</a>
+  <span class="separator"></span>
+  <div class="horizontal-flex">
+    <div class="vertical-flex">
+      <textarea class="textbox" id="latin" placeholder="Latin goes here..."></textarea>
+      <div class="force-horizontal-flex">
+        <div class="box">
+          <input id="removeZalgoCheckbox" type="checkbox"><span>・Remove Zalgo</span>
+        </div>
+        <div class="box">
+          <div class="charactercounter"><span id="latinCount">0</span> characters</div>
+        </div>
+      </div>
+      <button class="button" data-target="latin">[ COPY LATIN ]</button>
+    </div>
+
+    <img class="icon" src="/assets/img/translator_icon.png" alt="Translator Icon">
+
+    <div class="vertical-flex">
+      <textarea class="textbox" id="latex" placeholder="Latex goes here..."></textarea>
+      <div class="force-horizontal-flex">
+        <div class="box">
+          <span>Zalgo・</span><input id="zalgoRange" type="range" min="0" max="100" value="0">
+        </div>
+        <div class="box">
+          <div class="charactercounter"><span id="latexCount">0</span> characters</div>
+        </div>
+      </div>
+      <button class="button" data-target="latex">[ COPY LATEX ]</button>
+    </div>
+  </div>
+  <footer><a href="https://github.com/slashtemporary/latex">TSC Latex Language Translator</a> made with <a class="heart" href="https://guns.lol/tmp">❤</a> by <a href="https://github.com/slashtemporary">slashtemporary</a></footer>
+  <script src="/assets/js/script.js"></script>
+</body>
+</html>
