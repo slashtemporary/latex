@@ -14,56 +14,34 @@
 }
 
 html {
-  align-items: center;
   background: #191919;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
   overflow: hidden;
-  width: 100%;
 }
 
 body {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  overflow: hidden;
-  width: 90%;
+  height: 100vh;
+  padding: 5vw;
+  width: 100vw;
 }
 
-.title {
-  color: #4095bf;
-  font-size: 1.1rem;
+.title, .text {
+  font-size: 1.25rem;
   text-align: center;
-  width: auto;
 }
-
-.separator {
-  height: 1.1rem;
-  width: auto;
-}
-
-.text {
-  color: #dddddd;
-  font-size: 1.1rem;
-  text-align: center;
-  width: auto;
-}
+.title { color: #4095bf; }
+.text { color: #dddddd; }
 
 a {
   color: #666666;
-  transition: color 0.25s ease;
+  transition: color 0.5s ease;
 }
-
 a:hover { color: #4095bf; }
 
 .horizontal-flex, .force-horizontal-flex {
   align-items: center;
   display: flex;
-  gap: 0.5rem;
+  gap: 0.75rem;
+  height: auto;
   justify-content: center;
   width: 100%;
 }
@@ -72,8 +50,8 @@ a:hover { color: #4095bf; }
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  height: auto;
+  gap: 0.75rem;
+  height: 100%;
   justify-content: center;
   width: 100%;
 }
@@ -82,12 +60,11 @@ a:hover { color: #4095bf; }
   background: #151515;
   border: 2px solid #dddddd;
   color: #dddddd;
-  flex: 1;
   font-size: 1rem;
-  min-height: 150px;
+  min-height: 20vh;
   padding: 10px;
   resize: none;
-  transition: border-color 0.25s ease;
+  transition: border-color 0.5s ease;
   width: 100%;
 }
 
@@ -102,52 +79,50 @@ a:hover { color: #4095bf; }
   border: 2px solid #dddddd;
   color: #dddddd;
   display: flex;
+  height: 100%;
   justify-content: center;
   padding: 10px;
-  transition: border-color 0.25s ease;
-  height: 3rem;
+  transition: border-color 0.5s ease;
   width: 100%;
 }
 
 .button {
-  background-color: #151515;
+  background: #151515;
   border: 2px solid #dddddd;
   color: #dddddd;
   cursor: pointer;
   font-size: 1rem;
+  height: auto;
   padding: 10px;
-  transition: border-color 0.25s ease;
+  transition: border-color 0.5s ease;
   width: 100%;
 }
 
 .box:hover,
 .button:hover { border-color: #4095bf; }
 
-.charactercounter {
+.charactercounter .count-normal {
+  transition: color 0.5s ease;
   color: #dddddd;
-  transition: color 0.25s ease;
 }
 
 .charactercounter .count-warning {
+  transition: color 0.5s ease;
   color: #bf9540;
 }
 
 .charactercounter .count-danger {
+  transition: color 0.5s ease;
   color: #bf4040;
 }
 
-.icon { height: 32px; width: 32px; }
-
-footer {
-  bottom: 10px;
-  color: #666666;
-  font-size: 0.8rem;
-  left: 50%;
-  position: absolute;
-  text-align: center;
-  transform: translateX(-50%);
-  width: auto;
+.icon { 
+  height: auto; 
+  width: 80px; 
+  fill: #dddddd; 
+  transition: fill 0.5s ease;
 }
+.icon:hover { fill: #4095bf; }
 
 input[type="checkbox"] {
   box-sizing: border-box;
@@ -168,6 +143,17 @@ input[type="range"] {
   height: 6px;
   margin: 0;
   width: 100%;
+}
+
+footer {
+  bottom: 10px;
+  color: #666666;
+  font-size: 0.8rem;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  width: auto;
 }
 
 .heart {

@@ -22,9 +22,11 @@ const latexCountEl = document.getElementById('latexCount');
 function updateCounter(el, count) {
   if (!el) return;
   el.textContent = count;
-  el.classList.remove('count-warning', 'count-danger');
+  // Ensure the correct state class is present for transitions
+  el.classList.remove('count-warning', 'count-danger', 'count-normal');
   if (count >= 4000) el.classList.add('count-danger');
   else if (count >= 2000) el.classList.add('count-warning');
+  else el.classList.add('count-normal');
 }
 
 function updateAllCounts() {
