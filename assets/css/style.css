@@ -73,7 +73,7 @@ a:hover { color: #4095bf; }
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  height: 100%;
+  height: auto;
   justify-content: center;
   width: 100%;
 }
@@ -84,7 +84,7 @@ a:hover { color: #4095bf; }
   color: #dddddd;
   flex: 1;
   font-size: 1rem;
-  min-height: 200px;
+  min-height: 150px;
   padding: 10px;
   resize: none;
   transition: border-color 0.25s ease;
@@ -105,7 +105,7 @@ a:hover { color: #4095bf; }
   justify-content: center;
   padding: 10px;
   transition: border-color 0.25s ease;
-  height: 100%;
+  height: 3rem;
   width: 100%;
 }
 
