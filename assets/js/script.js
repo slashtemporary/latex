@@ -18,11 +18,9 @@ const removeZalgoCheckbox = document.getElementById('removeZalgoCheckbox');
 const latinCountEl = document.getElementById('latinCount');
 const latexCountEl = document.getElementById('latexCount');
 
-// Update counter display and apply color classes at thresholds
 function updateCounter(el, count) {
   if (!el) return;
   el.textContent = count;
-  // Ensure the correct state class is present for transitions
   el.classList.remove('count-warning', 'count-danger', 'count-normal');
   if (count >= 4000) el.classList.add('count-danger');
   else if (count >= 2000) el.classList.add('count-warning');
