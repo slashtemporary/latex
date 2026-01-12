@@ -165,11 +165,19 @@ footer {
   position: absolute;
   text-align: center;
   transform: translateX(-50%);
+  width: 100%;
 }
 
 .heart:hover { color: var(--color-danger); }
 
-@media (orientation: landscape) and (max-height: 450px) {
+@media (orientation: landscape) and (max-height: 400px) {
+  footer {
+    position: static;
+    transform: none;
+  }
+}
+
+@media (orientation: portrait) and (max-height: 1000px) {
   footer {
     position: static;
     transform: none;
@@ -178,8 +186,4 @@ footer {
 
 @media (orientation: portrait) {
   .horizontal-flex { flex-direction: column; }
-  footer {
-    position: static;
-    transform: none;
-  }
 }
