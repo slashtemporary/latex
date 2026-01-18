@@ -22,15 +22,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "npm"   # caching will only activate if package-lock.json exists
+          cache: npm
 
       - name: Install dependencies
-        run: |
-          npm install || echo "No package-lock.json found, continuing without cache"
+        run: npm install
 
       - name: Build Eleventy
         run: npx eleventy
