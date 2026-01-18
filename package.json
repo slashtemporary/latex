@@ -1,0 +1,15 @@
+{
+  "name": "latex-terminal",
+  "version": "1.0.0",
+  "description": "x33 haiii!!! heyy :3 meeow mrrow >w<",
+  "homepage": "https://www.slashtemporary.com/",
+  "author": "root@latex",
+  "license": "MIT",
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0"
+  }
+}
