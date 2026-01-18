@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+  <head>
+    {% include "head.html" %}
+  </head>
+  <body>
+    <div class="vertical-flex">
+      {% include "header.html" %}
+      <main id="content">
+        {{ content | safe }}
+      </main>
+      {% include "footer.html" %}
+    </div>
+  </body>
+</html>
